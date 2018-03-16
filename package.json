@@ -1,0 +1,32 @@
+{
+	"name": "ppipe",
+	"version": "2.5.0",
+	"description": "piping without the operator support",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "nyc --reporter=text --reporter=html mocha test",
+		"coverage": "nyc report --reporter=text-lcov | coveralls"
+	},
+	"keywords": [
+		"piping",
+		"promise",
+		"chain",
+		"async",
+		"pipe",
+		"pipe-operator",
+		"pipes-values"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/egeozcan/ppipe.git"
+	},
+	"author": "Yavuz Ege Özcan",
+	"license": "ISC",
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"coveralls": "^3.0.0",
+		"eslint": "^4.8.0",
+		"mocha": "^3.5.3",
+		"nyc": "^11.2.1"
+	}
+}
